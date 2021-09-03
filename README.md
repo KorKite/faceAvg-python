@@ -10,7 +10,7 @@
     python3 getAvgImg.py --img_path [input files path] --output_path [output img path]
 
 # Example
-    python3 getAvgImg.py --img_path "./example-faces" --output_path output.png
+    python3 getAvgImg.py --img_path example-faces --output_path output.png
 
 # Example Explanation
     "example-faces" folder has 63 number of images
