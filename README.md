@@ -2,9 +2,14 @@
     It is Easy face average generator
 
 # Codes
-    getAvgImg.py -->> Generator Code
-    shape_predictor_68_face_landmarks.dat -->> Predictor File
-    error_img.txt -->> If there is more than 2 people in one image, program ignore such image and write log on here.
+    getAvgImg.py 
+    -->> Generator Code
+    
+    shape_predictor_68_face_landmarks.dat
+    -->> Predictor File
+    
+    error_img.txt 
+    -->> If there is more than 2 people in one image, program ignore such image and write log on here.
 
 # How to use
     python3 getAvgImg.py --img_path [input files path] --output_path [output img path]
