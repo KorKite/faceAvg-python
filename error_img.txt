@@ -1,1 +1,9 @@
 ./example-faces/image29.jpg
+./example-faces/image31.jpg
+./example-faces/image42.jpg
+./example-faces/image29.jpg
+./example-faces/image31.jpg
+./example-faces/image42.jpg
+./example-faces/image29.jpg
+./example-faces/image31.jpg
+./example-faces/image42.jpg

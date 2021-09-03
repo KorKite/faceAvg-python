@@ -34,3 +34,4 @@ def getLandmark_numpy(image):
 
     return np.array(landmark_list)
 
+

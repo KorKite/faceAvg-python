@@ -9,9 +9,7 @@ def avgVector(path):
     Return Avg Image using openCV vector (Numpy)
     """
     allPoints, images = getData(path)
-    print([i.shape for i in allPoints])
 
-    print([i.shape for i in images])
     eyecornerDst = [ (np.int(0.3 * w ), np.int(h / 3)), (np.int(0.7 * w ), np.int(h / 3)) ]
     
     imagesNorm = []
@@ -126,3 +124,4 @@ if __name__ == "__main__":
     output_path = args.output_path
 
     avgSave(img_path, output_path)
+    

@@ -1,6 +1,5 @@
 import cv2
 import os
-import cv2
 import numpy as np
 import math
 import sys
@@ -24,14 +23,15 @@ def getData(path):
             
             if len(landmark) == 0 or landmark.shape[0] != 68:
                 with open("./error_img.txt", "a") as e:
-                    e.writelines(filePath)
-                # print(filePath)
-                # print(landmark.shape)
+                    e.writelines(filePath+"\n")
+                
                 continue
             pointArr.append(landmark)
-            img = cv2.imread(os.path.join(path,filePath))
+
+            img = cv2.imread(filePath)
             img = np.float32(img)/255.0
             imagesArray.append(img)
+
     return pointArr, imagesArray
 
 
@@ -162,3 +162,4 @@ def warpTriangle(img1, img2, t1, t2) :
     img2[r2[1]:r2[1]+r2[3], r2[0]:r2[0]+r2[2]] = img2[r2[1]:r2[1]+r2[3], r2[0]:r2[0]+r2[2]] * ( (1.0, 1.0, 1.0) - mask )
      
     img2[r2[1]:r2[1]+r2[3], r2[0]:r2[0]+r2[2]] = img2[r2[1]:r2[1]+r2[3], r2[0]:r2[0]+r2[2]] + img2Rect
+
