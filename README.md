@@ -1,5 +1,6 @@
 # faceAvg-python
     It is Easy face average generator
+    I modify errors when generate faces (multiple faces, no face etc)
 
 # Codes
     getAvgImg.py 
@@ -20,6 +21,8 @@
 # Example Explanation
     "example-faces" folder has 63 number of images
     This python code generate average face of given images
+
+<img src="https://github.com/KorKite/faceAvg-python/blob/main/output.png?raw=true" width="200">
 
 
 ## References
